@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+    background-color: black;
+    /* padding: 0 96px ; */
+    color: white;
+    font-family: system-ui;
+    max-width: 1955px;
+    margin: auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.box {
+    margin: 296px ;
+  height: 48px;
+  width: 587.43px;
+   margin-left: auto; 
+  margin-right: auto; 
+ display: flex;  
+ 
+}
+
+
+
+.fs_element{
+    font-size: 56px;
+    
+}
+.div_1{
+
+    padding: 0 96px ;
+}
+.div_2{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    border-top: solid 2px #ffffff6b;
+    border-bottom: solid 1px #FFFFFF33;
+    height: 168px ;
+}
+.midil_dis{
+    padding: 49px 96px ;
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    font-size: 24px;
+
+}
+.divs___{
+    padding: 28px 0;
+    width: 595.259765625;
+    height: 384;
+    top: 812px;
+    left: 743.11px;
+    opacity: 1;
+}
+.imgs_{
+  width: 100%;
+        height: auto;
+}
+.center_div{
+    padding: 80px 96px;
+         display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    padding-bottom: 296px;
+}
+.FC-fs{
+    font-size: 24px;
+padding: 36px 0;
+}
+
+.imf{
+     width: 600px;
+    height: 448px;
+}
+.dis_____{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 96px;
+    gap: 48px;
+    font-size: 24px;
+    padding-top: 80px;
+    padding-bottom: 272px;
+}
+.red{
+    color: red;
+}
+.img_two{
+width: 386.2069091796875px;
+height: 448px;
+}
+.fs_two{
+    font-size: 24px;
+padding: 48px 0;
+}
+.dis_____two{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+        padding: 119px 96px;
+    }
+.a{
+    padding-top: 80px;
+}
+.fs_s{
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 96px;
+    padding-bottom: 130px;
+}
+.border{
+    border: solid 1px gray;
+    margin: 0 96px;
+    margin-bottom: 73px;
+    margin-top: 152px;
+}
+
+@media (max-width:900px){
+    .box{
+        margin: 66px auto;
+        /* padding: 60px; */
+    }
+    .dis_____two{
+       flex-wrap: wrap;
+       width: 100% ;
+    }
+    .img_two{
+        width: 100%;
+        height: 100%;
+    }
+
+    .midil_dis , .dis_____{
+    font-size: 20px;
+        padding: 49px 60px ;
+    }
+    .div_1{
+        padding: 0 56px ;
+    }
+    .div_2{
+    height: 108px ;
+    }
+    .fs_element{
+        font-size: 36px;
+    }
+    
+}
+@media (max-width:800px){
+.center_div{
+    flex-wrap: wrap;
+    align-items: center;
+}
+.imgs_{
+    width: 600px;
+    height: 448px;
+}
+}
+@media (max-width:720px){
+    .box{
+        margin: 66px auto;
+        width: 450px;
+    }
+       .midil_dis , .dis_____{
+    font-size: 18px;
+    }
+    .fs_element{
+        font-size: 20px;
+    }
+    
+    .fs_s   {
+        padding: 0 36px;
+        font-size: 20px;
+    }
+    .border{
+        margin: 0 36px;
+    margin-bottom: 73px;
+
+
+    }
+
+
+}
+@media (max-width:550px){
+    .div_1{
+        padding: 36px;
+    }
+    .div_2{
+        height: 86px;
+    }
+     .dis_____{
+    font-size: 15px;
+    padding: 36px;
+    }
+    .dis_____{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .dis_____two{
+        padding: 0 36px;
+    }
+    .fs_two{
+        font-size: 16px;
+    }
+    .midil_dis{
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+    .divs___{
+        width: 100%;
+    }
+}
+@media (max-width:650px){
+    .center_div{
+        padding: 36px;
+    }
+    
+    
+}
+@media (max-width:450px){
+    .div_1{
+        padding: 5px;
+    }
+    .div_2{
+        height: 80px;
+    }
+    .midil_dis{
+    padding: 25px;
+    }
+    .center_div{
+        padding: 5px;
+        width: 100%;
+    }
+    .box{
+                width: 300px;
+    }
+    .fs_s{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .div{
+        width: 100%;
+        padding: 15px 0;
+    }
+    .border{
+        margin: 0;
+        width: 100%;
+    }
+  
+    
+}
