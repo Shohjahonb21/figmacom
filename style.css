@@ -15,7 +15,7 @@ img {
   height: auto;
   vertical-align: middle;
 }
-.box {
+.header {
     margin: 296px ;
   height: 48px;
   width: 587.43px;
@@ -27,15 +27,15 @@ img {
 
 
 
-.fs_element{
+.section__title{
     font-size: 56px;
     
 }
-.div_1{
+.section{
 
     padding: 0 96px ;
 }
-.div_2{
+.section__header{
     display: flex;
     align-items: center;
     
@@ -44,7 +44,7 @@ img {
     border-bottom: solid 1px #FFFFFF33;
     height: 168px ;
 }
-.midil_dis{
+.materials{
     padding: 49px 96px ;
     display: flex;
     justify-content: center;
@@ -52,37 +52,32 @@ img {
     font-size: 24px;
 
 }
-.divs___{
-    padding: 28px 0;
-    width: 595.259765625;
-    height: 384;
-    top: 812px;
-    left: 743.11px;
-    opacity: 1;
+.content__text{
+ padding: 28px 0;  
+font-size: 24px;
 }
 .imgs_{
   width: 100%;
         height: auto;
 }
-.center_div{
+.portfolio{
     padding: 80px 96px;
          display: flex;
     justify-content: space-between;
     gap: 48px;
     padding-bottom: 296px;
 }
-.FC-fs{
+.portfolio__caption{
     font-size: 24px;
 padding: 36px 0;
 }
 
-.imf{
+.portfolio__image{
      width: 600px;
     height: 448px;
 }
-.dis_____{
+.services{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 0 96px;
     gap: 48px;
@@ -90,28 +85,43 @@ padding: 36px 0;
     padding-top: 80px;
     padding-bottom: 272px;
 }
-.red{
+.services_div1{
+    width: 800px;
+}
+.services_div2{
+    width: 500px;
+}
+.footer__brand{
     color: red;
 }
-.img_two{
+.experts__image{
 width: 386.2069091796875px;
 height: 448px;
 }
-.fs_two{
+.experts__bio{
     font-size: 24px;
 padding: 48px 0;
+
 }
-.dis_____two{
+.content{
         display: flex;
-        align-items: center;
+    
         justify-content: center;
-        gap: 48px;
+        gap: 52px;
         padding: 119px 96px;
     }
 .a{
     padding-top: 80px;
 }
-.fs_s{
+.experts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 267px;
+    padding: 0 96px;
+    padding-top: 80px;
+}
+.footer{
     font-size: 32px;
     display: flex;
     align-items: center;
@@ -119,35 +129,53 @@ padding: 48px 0;
     padding: 0 96px;
     padding-bottom: 130px;
 }
-.border{
+.footer__divider{
     border: solid 1px gray;
     margin: 0 96px;
     margin-bottom: 73px;
     margin-top: 152px;
 }
+.none_{
+    display: none;
+}
+.content--hidden{
+  animation: close 0.5s forwards;
+}
+.materials__item{
+    padding: 28px 0;
+}
 
+
+
+
+@media (max-width:1000px){
+    .portfolio__image{
+        width: 100%;
+    height: auto;
+    }
+}
 @media (max-width:900px){
-    .box{
+    .header{
         margin: 66px auto;
         /* padding: 60px; */
     }
-    .dis_____two{
+    .experts{
        flex-wrap: wrap;
        width: 100% ;
     }
-    .img_two{
+    .experts__image{
         width: 100%;
         height: 100%;
     }
 
-    .midil_dis , .dis_____{
+    .materials , .services{
     font-size: 20px;
         padding: 49px 60px ;
     }
-    .div_1{
+    .section{
         padding: 0 56px ;
     }
-    .div_2{
+    .section__header{
     height: 108px ;
     }
     .fs_element{
@@ -156,7 +184,7 @@ padding: 48px 0;
     
 }
 @media (max-width:800px){
-.center_div{
+.portfolio{
     flex-wrap: wrap;
     align-items: center;
 }
@@ -164,24 +192,46 @@ padding: 48px 0;
     width: 600px;
     height: 448px;
 }
+ .portfolio__image{
+        width: 800px; 
+    }
+    .content, .services , .experts , .materials{
+        flex-wrap: wrap;
+    }
+    .content__text {
+        width: 100%;
+        font-size: 18px;
+    }
+    .section__title{
+        font-size: 25px;
+    }
 }
 @media (max-width:720px){
-    .box{
+    .content, .services , .experts , .materials , .portfolio , .section{
+        padding: 25px;
+    }
+    .footer{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+    }
+    .header{
         margin: 66px auto;
         width: 450px;
     }
-       .midil_dis , .dis_____{
+       .content , .services{
     font-size: 18px;
     }
     .fs_element{
         font-size: 20px;
     }
     
-    .fs_s   {
+    .footer__contact   {
         padding: 0 36px;
         font-size: 20px;
     }
-    .border{
+    .footer__divider{
         margin: 0 36px;
     margin-bottom: 73px;
 
@@ -191,10 +241,10 @@ padding: 48px 0;
 
 }
 @media (max-width:550px){
-    .div_1{
+    .section{
         padding: 36px;
     }
-    .div_2{
+    .section__header{
         height: 86px;
     }
      .dis_____{
@@ -205,53 +255,54 @@ padding: 48px 0;
         flex-wrap: wrap;
         width: 100%;
     }
-    .dis_____two{
+    .experts{
         padding: 0 36px;
     }
-    .fs_two{
+    .experts__bio{
         font-size: 16px;
     }
-    .midil_dis{
+    .materials{
         flex-wrap: wrap;
         font-size: 12px;
     }
-    .divs___{
+    .materials__item{
         width: 100%;
     }
 }
 @media (max-width:650px){
-    .center_div{
+    .portfolio{
         padding: 36px;
     }
-    
+   
     
 }
 @media (max-width:450px){
-    .div_1{
+    .section{
         padding: 5px;
     }
-    .div_2{
+    .section__header{
         height: 80px;
     }
-    .midil_dis{
+    .materials{
     padding: 25px;
     }
-    .center_div{
-        padding: 5px;
+    .portfolio{
+        padding: 25px;
         width: 100%;
     }
-    .box{
-                width: 300px;
+    .header{
+        width: 300px;
+        height: auto;
     }
-    .fs_s{
+    .footer{
         flex-wrap: wrap;
         text-align: center;
     }
-    .div{
+    .text--highlight{
         width: 100%;
         padding: 15px 0;
     }
-    .border{
+    .footer__divider{
         margin: 0;
         width: 100%;
     }
